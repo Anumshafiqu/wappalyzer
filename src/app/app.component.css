@@ -1,0 +1,25 @@
+.bg-purple {
+    background-color: #550aac;
+  }
+  .purple{
+    color: #550aac;
+  }
+  input::placeholder{
+    color: grey;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  .items{
+    font-family: sans-serif;
+  }
+  .image-1{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.tech{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
