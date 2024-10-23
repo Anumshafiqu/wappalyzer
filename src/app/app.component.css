@@ -1,25 +1,64 @@
 .bg-purple {
     background-color: #550aac;
-  }
-  .purple{
+}
+
+.purple {
     color: #550aac;
-  }
-  input::placeholder{
+}
+
+input::placeholder {
     color: grey;
     font-size: 15px;
     font-family: sans-serif;
-  }
-  .items{
+}
+
+.items {
     font-family: sans-serif;
-  }
-  .image-1{
+}
+
+.image-1 {
     border-radius: 50%;
     padding: 10px;
     background-color: lightgray;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-.tech{
+}
+
+.tech {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.images-pipe {
+    height: 40px;
+}
+
+.images-pipes {
+    height: 30px;
+    width: 50px;
+}
+
+.images-make {
+    height: 45px;
+}
+
+.mail {
+    height: 28px;
+}
+
+.paragraph {
+    letter-spacing: 1px;
+}
+
+.card-1 {
+    font-size: 12px;
+    margin-left: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+  
