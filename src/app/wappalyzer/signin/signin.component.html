@@ -1,0 +1,52 @@
+
+
+
+<!-- Trigger Button for Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signInModal">
+    Sign In
+  </button>
+  
+  <!-- Sign In Modal -->
+  <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Welcome back! Please sign in with your email address and password.</p>
+          <form>
+            <!-- Email Field -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Email address" required>
+              <small class="text-danger">Email address is required</small>
+            </div>
+  
+            <!-- Password Field -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="pi pi-eye"></i>
+                </button>
+              </div>
+              <small class="text-danger">Password is required</small>
+            </div>
+  
+            <!-- Sign In Button -->
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="d-block">Create an account</a>
+          <a href="#" class="d-block">Reset password</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

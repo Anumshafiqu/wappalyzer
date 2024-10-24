@@ -1,181 +1,6 @@
+
 <div class="bg-purple">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
-    <div class="container-fluid mx-8">
-      <a class="navbar-brand" routerLink="home">
-        <img src="../assets/logo-dark.png" alt="" width="200" height="40" class="d-inline-block align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-        <ul class="navbar-nav me-5  mb-2 mb-lg-0 ms-auto">
-          <li class="nav-item dropdown ml-5 mt-2">
-            <a class="nav-link dropdown-toggle fw-medium small fs-6 text-white ml-5 d-flex align-items-center"
-              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Products
-            </a>
-            <!-- <div class="dropdown-menu w-30rem" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item fw-medium tech" href="#">Technology lookup</a>
-              <p class="small text-secondary dropdown-pro">Find out which website are biuld with</p>
-              <a class="dropdown-item" href="#">Lead lists</a>
-              <a class="dropdown-item" href="#">Email verification</a>
-              <a class="dropdown-item" href="#">Keyword search</a>
-              <a class="dropdown-item" href="#">Website alerts</a>
-              <a class="dropdown-item" href="#">Apps</a>
-            </div> -->
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li class="dropdown-item px-3 py-2 border-bottom">
-                <i class="fas fa-search mt-3  mx-2"></i>
-                <div>
-                  <span class="fw-semibold small tech mx-3">Technology lookup</span>
-                  <small class="d-block text-muted mx-3 mb-0 text-xs">Find out what websites are built with</small>
-                </div>
-
-              </li>
-
-
-              <li class="dropdown-item px-3 border-bottom">
-                <i class="fas fa-list mt-2 mx-2"></i>
-                <div>
-                  <span class="fw-semibold small tech mx-3">Lead lists</span>
-                  <small class="d-block text-muted mx-3 mb-0 text-xs">Create a list of sites for a technology, keyword, or
-                    domain</small>
-                </div>
-              </li>
-
-              <li class="dropdown-item px-3 border-bottom">
-                <i class="fas fa-envelope mt-2  mx-2"></i>
-                <div>
-                  <span class="fw-semibold tech small mx-3">Email verification</span>
-                  <small class="d-block text-muted mx-3 mb-0 text-xs">Verify the validity of any email address</small>
-                </div>
-              </li>
-
-              <li class="dropdown-item px-3 border-bottom">
-                <i class="fas fa-key mt-2  mx-2"></i>
-                <div>
-                  <span class="fw-semibold small tech mx-3">Keyword search</span>
-                  <small class="d-block text-muted mx-3 mb-0 text-xs">Find websites by keyword</small>
-                </div>
-              </li>
-
-              <li class="dropdown-item px-3 mb-0 border-bottom">
-                <i class="fas fa-bell mt-2  mx-2"></i>
-                <div class="mb-0">
-                  <span class="fw-semibold small tech mx-3">Website alerts</span>
-                  <small class="d-block text-muted mx-3 mb-0 text-xs">Monitor websites for technology changes</small>
-                </div>
-              </li>
-
-              <li class="dropdown-item px-3">
-                <i class="fas fa-th mt-2  mx-2"></i>
-                <div class="mb-0">
-                  <span class="fw-semibold small tech mx-3">Apps</span>
-                  <small class="d-block text-muted mx-3 mb-0">Connect Wappalyzer to the apps you use</small>
-                </div>
-              </li>
-            </ul>
-
-          </li>
-          <li class="nav-item mt-2">
-            <a class="nav-link fw-medium small fs-6 text-white ml-4" [routerLink]="['/pricing']"
-              routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Pricing</a>
-          </li>
-          <li class="nav-item dropdown mt-2">
-            <a class="nav-link dropdown-toggle fw-medium small fs-6 text-white ml-3" href="#" id="navbarDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li class="dropdown-item px-2 mb-0 border-bottom">
-                <div>
-                  <span class="fw-semibold small tech mx-3">Technologies</span>
-                  <small class="d-block text-secondary mx-3 text-xs mb-0">Browse technologies and categories</small>
-                </div>
-              </li>
-              <li class="dropdown-item px-2 mb-0 border-bottom">
-                <div>
-                  <span class="fw-semibold small tech mx-3">Articles</span>
-                  <small class="d-block text-secondary mx-3 text-xs mb-0">Free content covering technographics</small>
-                </div>
-              </li>
-              <li class="dropdown-item px-2 mb-0 border-bottom">
-                <div>
-                  <span class="fw-semibold small tech mx-3">FAQs</span>
-                  <small class="d-block text-secondary mx-3 text-xs mb-0">Answers to frequently asked questions</small>
-                </div>
-              </li>
-              <li class="dropdown-item px-2 mb-0">
-                <div>
-                  <span class="fw-semibold small tech mx-3">Documentation</span>
-                  <small class="d-block text-secondary text-xs mx-3 mb-0">API reference and developer documentation</small>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item mt-0">
-            <a class="nav-link small fs-6 text-white ml-3">
-              <button type="button" class="btn bg-purple border-0 fw-medium text-white" data-bs-toggle="modal"
-                data-bs-target="#signInModal">
-                Sign In
-              </button></a>
-          </li>
-          <li class="nav-item mt-2">
-            <button class="btn btn-outline-light fw-medium small fs-6 text-white ml-4 bg-purple text-white
-            fw-medium" type="submit">Sign up
-              Free</button>
-          </li>
-          <div class=" ml-6 mt-2 fs-6 text-white">
-            <i class="fa-regular fa-moon ms-auto ml-5"></i>
-            <i class="fa-solid fa-magnifying-glass ml-5"></i>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered w-26rem">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
-          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-        </div>
-        <div class="modal-body">
-          <p class="small fw-medium tech small text-secondary">Welcome back! Please sign in with your email<br> address
-            and password.</p>
-          <form>
-            <!-- Email Field -->
-            <div class="mb-3">
-              <input type="email" class="form-control" id="email" placeholder="Email address" required>
-            </div>
-
-            <!-- Password Field -->
-            <div class="mb-3">
-              <div class="input-group">
-                <input type="password" class="form-control" id="password" placeholder="Password" required>
-                <!-- <button class="btn btn-outline-secondary" type="button">
-                  <i class="pi pi-eye"></i>
-                </button> -->
-              </div>
-            </div>
-
-            <!-- Sign In Button -->
-            <div class="d-grid gap-2 w-7rem">
-              <button type="submit" class="btn bg-purple text-white fw-medium tech btn-block ">Sign In</button>
-            </div>
-          </form>
-        </div>
-        <div class="m-3 mt-1 text-left">
-          <a href="#" class="d-flex text-decoration-none">Create an account</a>
-          <a href="#" class="d-flex text-decoration-none">Reset password</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<router-outlet></router-outlet>
-<!-- <div class="container">
+<div class="container">
     <div class="row">
       <div class="text-center mt-5">
         <h1 class="text-white font-normal">Identify technologies on websites</h1>
@@ -196,6 +21,7 @@
     </div>
   </div>
 </div>
+
 
 <div class="container-fluid">
   <div class="row mx-7">
@@ -821,4 +647,4 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>

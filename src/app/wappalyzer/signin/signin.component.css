@@ -1,0 +1,19 @@
+.modal-body input {
+    padding: 12px 15px;
+    border-radius: 6px;
+  }
+  
+  .modal-body small.text-danger {
+    font-size: 0.85rem;
+  }
+  
+  .modal-footer a {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .modal-footer a:hover {
+    text-decoration: underline;
+  }
+  
