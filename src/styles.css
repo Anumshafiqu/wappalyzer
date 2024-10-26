@@ -1,2 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
+
+
+/* styles.css */
+body {
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for background and text color */
+  }
+  
+  body.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: white; /* White text color */
+  }
+  
+  nav {
+    transition: background-color 0.5s; /* Smooth transition for navbar background */
+  }
+  
+  nav.light {
+    background-color: #f8f9fa; /* Light background for navbar */
+  }
+  
+  nav.dark {
+    background-color: #343a40; /* Darker background for navbar */
+  }
+  
+  .navbar .nav-link {
+    color: black; /* Default link color */
+  }
+  
+  body.dark-mode .navbar .nav-link {
+    color: white; /* White text for links in dark mode */
+  }
+  
+  body.dark-mode .navbar .navbar-brand {
+    color: white; /* White brand text in dark mode */
+  }
+  
+  body.dark-mode .navbar .nav-link:hover {
+    color: #ddd; /* Light gray hover effect in dark mode */
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1); /* Toggler border */
+  }
+  
+  body.dark-mode .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Toggler border in dark mode */
+  }
+  body.dark-theme {
+    background-color: #121212; 
+    color: #ffffff; 
+
+  }
+  
+  .dark-theme .card, .dark-theme .search-bar, .dark-theme img {
+    background-color: #333333; 
+    filter: brightness(0.8); 
+  }
+
+  body.dark-theme {
+    background-color: #121212; 
+    color: #ffffff; 
+  }
+  
+
+  body.dark-theme .card, 
+  body.dark-theme img {
+    background-color: initial; 
+    filter: none; 
+  }
+  
+ 
+  .dark-theme .search-bar {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  
+  

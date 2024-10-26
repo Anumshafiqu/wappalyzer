@@ -6,6 +6,7 @@
     color: #550aac;
 }
 
+
 input::placeholder {
     color: grey;
     font-size: 15px;
@@ -119,6 +120,58 @@ li {
     background-color: #563d7c;
     border-color: #563d7c;
   }
+
+
+  /* styles.css */
+body {
+  transition: background-color 0.5s, color 0.5s; /* Smooth transition for background and text color */
+}
+
+body.dark-mode {
+  background-color: #121212; /* Dark background color */
+  color: white; /* White text color */
+}
+
+nav {
+  transition: background-color 0.5s; /* Smooth transition for navbar background */
+}
+
+.card-nav{
+  margin-left: 220px;
+}
+.container-fluid{
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-nav {
+    margin: 0; 
+  }
+  .container-fluid{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .navbar .navbar-nav {
+    margin: 0; 
+  }
+  .container-fluid{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
   
   
   

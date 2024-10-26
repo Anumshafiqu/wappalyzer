@@ -83,6 +83,78 @@ input::placeholder {
 li {
   list-style: none;
 }
+td:nth-child(even) 
+{background-color: white;
+  box-shadow: 2px 2px 5px rgb(189, 184, 184);
+  text-align: center;
+}
+
+td:nth-child(3){
+  background-color: white;
+    box-shadow: 2px 2px 5px rgb(212, 211, 211);
+    text-align: center;
+}
+
+.secon-column{
+  height: 200px;
+}
+/* Add this to the existing CSS */
+
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pricing-table {
+  border-collapse: collapse;
+  width: 80%;
+  table-layout: fixed;
+}
+
+
+
+/* Add a vertical border to the cells in the second column (Business) */
+td:nth-child(3) {
+  border-right: 2px solid #007bff; /* Adjust color and thickness */
+}
+
+/* Optional: style header cells separately */
+
+
+/* Remove the border between rows in other columns */
+.pricing-table td:not(:nth-child(2)) {
+  border-right: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
