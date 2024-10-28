@@ -16,7 +16,7 @@
 }
   
 td{
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
   padding: 18px;
   color: grey;
 }
@@ -85,49 +85,70 @@ li {
 }
 td:nth-child(even) 
 {background-color: white;
-  box-shadow: 2px 2px 5px rgb(189, 184, 184);
+  box-shadow: 2px 2px 4px rgb(189, 184, 184);
   text-align: center;
+  border-radius: 10px 10px 0px 0px;
 }
 
 td:nth-child(3){
   background-color: white;
     box-shadow: 2px 2px 5px rgb(212, 211, 211);
     text-align: center;
+    font-size: 14px;
+
+}
+td:nth-child(3){
+ border: 2px solid #550aac;
+ border-bottom: 2px solid lightgrey;
+
+}
+.tech-2{
+  width: 400px;
+ }
+ .table-wrapper {
+  overflow-x: auto; 
+  width: 100%;     
 }
 
-.secon-column{
-  height: 200px;
-}
-/* Add this to the existing CSS */
-
-
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-.pricing-table {
-  border-collapse: collapse;
-  width: 80%;
-  table-layout: fixed;
+.fixed-width-table {
+  min-width: 900px; 
 }
 
 
-
-/* Add a vertical border to the cells in the second column (Business) */
-td:nth-child(3) {
-  border-right: 2px solid #007bff; /* Adjust color and thickness */
+.switch-height {
+  height: 1.5em; 
+  width: 3em;    
 }
 
-/* Optional: style header cells separately */
-
-
-/* Remove the border between rows in other columns */
-.pricing-table td:not(:nth-child(2)) {
-  border-right: none;
+ @media (max-width: 992px) {
+  .trial-1{
+    margin-left: 0px;
+  }
+  .trial{
+    margin-left: 0px;
+  }
 }
+@media (max-width: 850px) {
+.button{
+  width: 140px;
+}
+tech-2{
+  width: 300px;
+}
+}
+@media (max-width: 600px) {
+  .button{
+    width: 150px;
+  }
+  tech-2{
+    width: 200px;
+  }
+  }
+
+
+
+
+
 
 
 

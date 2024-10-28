@@ -8,8 +8,8 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent" *ngIf="!isSearchActive">
-        <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 card-nav">
+      <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 card-nav" *ngIf="!isSearchOpen">
           <li class="nav-item dropdown mt-2">
             <a class="nav-link dropdown-toggle fw-medium small fs-6 text-white d-flex align-items-center"
               id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -121,10 +121,27 @@
           </li>
           <div class=" ml-6 mt-2 fs-6 text-white">
             <i class="fas fa-moon mt-2" (click)="toggleDarkMode()" style="cursor: pointer;"></i>
-            <i class="fa-solid fa-magnifying-glass mx-4"></i>
+            <!-- <button
+            class="btn btn-outline-light ml-auto"
+            (click)="toggleDarkMode()"
+          ><i [class]="isDarkMode ? 'bi bi-sun' : 'bi bi-moon'"></i>
+          </button> -->
+            <!-- <i class="fa-solid fa-magnifying-glass mx-4"></i> -->
+            
+              <i class="fa-solid fa-magnifying-glass mx-4" (click)="toggleSearch()"></i>
             
           </div>
         </ul>
+        <div *ngIf="isSearchOpen" class="search-bar">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search..."
+            style="width: 400px"
+          />
+          <i class="fa fa-close text-white fs-5 mx-2" aria-hidden="true" (click)="toggleSearch()"></i>
+          <!-- <button class="btn btn-close " (click)="toggleSearch()"></button> -->
+        </div>
       </div>
     </div>
   </nav>

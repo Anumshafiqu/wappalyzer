@@ -45,47 +45,32 @@ export class AppComponent {
   get formControls() {
     return this.signInForm.controls;
   }
-  isDarkMode: boolean = false;
 
-  ngOnInit() {
-    const savedMode = localStorage.getItem('darkMode');
-    this.isDarkMode = savedMode === 'true';
-    this.updateBodyClass();
-    console.log("toggle")
-  }
 
+
+
+
+  isDarkMode = false;
+
+ 
   toggleDarkMode() {
     this.isDarkMode = !this.isDarkMode;
-    localStorage.setItem('darkMode', String(this.isDarkMode));
-    this.updateBodyClass();
-  }
 
-  private updateBodyClass() {
     if (this.isDarkMode) {
-      document.body.classList.add('dark-mode');
+      this.renderer.addClass(document.body, 'dark-mode');
     } else {
-      document.body.classList.remove('dark-mode');
+      this.renderer.removeClass(document.body, 'dark-mode');
     }
   }
+  isSearchOpen = false;
 
-  @Output() darkModeToggle = new EventEmitter<void>();
-
-  onToggleDarkMode(isDarkMode: boolean) {
-    this.darkModeToggle.emit();
-    if (isDarkMode) {
-      document.body.classList.add('dark-theme');
-    } else {
-      document.body.classList.remove('dark-theme');
-    }
+  toggleSearch() {
+    this.isSearchOpen = !this.isSearchOpen;
   }
 
-  isSearchActive = false;
 
-  toggleSearchMode() {
-    this.isSearchActive = !this.isSearchActive;
-    console.log('isSearchActive:', this.isSearchActive);
-  }
 
+ 
 
 
 
