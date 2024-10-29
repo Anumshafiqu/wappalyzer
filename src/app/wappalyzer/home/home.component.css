@@ -228,13 +228,20 @@ body.dark-mode .navbar .nav-link:hover {
       width: 200px;
     }
     }
-    @media (max-width: 500px) {
+    @media (max-width: 576px) {
       .button{
         width: 160px;
       }
       tech-2{
         width: 100px;
       }
+      .second-cards{
+        width: 200px;
+      }
+      .button-api{
+        margin-top: 10px;
+      }
+
       }
 
 
